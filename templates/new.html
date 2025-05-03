@@ -1,0 +1,20 @@
+<!-- templates/new.html -->
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>新しい日記</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>    
+    <body>
+        <div class="container">
+          <h1>新しい日記を書く</h1>
+          <form method="post">
+              <textarea name="content" rows="10" cols="50" required></textarea><br><br>
+              <button type="submit">保存する</button>
+          </form>
+          <a href="/">← 一覧に戻る</a>
+        </div>
+      </body>      
+</html>

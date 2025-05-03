@@ -1,0 +1,53 @@
+/* static/style.css */
+body {
+    font-family: "Yu Gothic", sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #fffaf0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+textarea {
+    width: 100%;
+    height: 250px;
+    font-size: 1em;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+input, button {
+    font-size: 1em;
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+h1 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #007acc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}

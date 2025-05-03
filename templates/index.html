@@ -1,0 +1,26 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>オレの日記</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>    
+    <body>
+        <div class="container">
+            <h1>オレの日記</h1>
+            <ul>
+                {% for date in diaries %}
+                    <li><a href="/diary/{{ date }}">{{ date }}</a></li>
+                {% else %}
+                    <li>まだ日記がありません。</li>
+                {% endfor %}
+            </ul>
+
+            <div class="new-button">
+                <a href="/new">＋ 新しく日記を書く</a>
+            </div>
+        </div>
+    </body>
+</html>
